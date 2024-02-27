@@ -73,12 +73,13 @@ public class JsonObjectAPI {
                 List<PhoneNumber> phoneNumbers = person.getPhoneNumbers();
                 JsonArrayBuilder jsonArrayBuilderPhone = Json.createArrayBuilder();
                 for (PhoneNumber phoneNumber : phoneNumbers){
-                    JsonObject objectPhone = jsonObjectBuilder.add("type", phoneNumber.getType())
+                    JsonObject objectPhone = jsonObjectBuilder
+                            .add("type", phoneNumber.getType())
                             .add("number", phoneNumber.getNumber())
                             .build();
                     jsonArrayBuilderPhone.add(objectPhone);
                 }
-                JsonArray jsonArrayPhone =  jsonArrayBuilder.build();
+                JsonArray jsonArrayPhone =  jsonArrayBuilderPhone.build();
 
                 //person
                 JsonObject jsonObject = jsonObjectBuilder.add("firstName", person.getFirstName())
