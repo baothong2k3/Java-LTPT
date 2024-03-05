@@ -1,47 +1,39 @@
-package Entity;
+package entity;
 
+import com.google.gson.annotations.SerializedName;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Setter
+@Getter
+@ToString
+@NoArgsConstructor
+//@AllArgsConstructor
 public class Product {
-    // productID	productName	supplier	category	quantityPerUnit	unitPrice	unitsInStock	unitsOnOrder	reorderLevel	discontinued
-    private int productID;
-    private String productName;
-    private Supplier supplier;
-    private Category category;
-    private String quantityPerUnit;
-    private double unitPrice;
-    private int unitsInStock;
-    private int unitsOnOrder;
-    private int reorderLevel;
-    private boolean discontinued;
+	@SerializedName("productID")
+	private String id;
+	@SerializedName("productName")
+	private String name;
+	private double unitPrice;
+	private int unitsInStock;
+	private boolean discontinued;
+	private String quantityPerUnit;
+	
+	@ToString.Exclude
+	private Category category;
 
-    public Product() {
-    }
-
-    public Product(int productID, String productName, Supplier supplier, Category category, String quantityPerUnit, double unitPrice, int unitsInStock, int unitsOnOrder, int reorderLevel, boolean discontinued) {
-        this.productID = productID;
-        this.productName = productName;
-        this.supplier = supplier;
-        this.category = category;
-        this.quantityPerUnit = quantityPerUnit;
-        this.unitPrice = unitPrice;
-        this.unitsInStock = unitsInStock;
-        this.unitsOnOrder = unitsOnOrder;
-        this.reorderLevel = reorderLevel;
-        this.discontinued = discontinued;
-    }
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "productID=" + productID +
-                ", productName='" + productName + '\'' +
-                ", supplier=" + supplier +
-                ", category=" + category +
-                ", quantityPerUnit='" + quantityPerUnit + '\'' +
-                ", unitPrice=" + unitPrice +
-                ", unitsInStock=" + unitsInStock +
-                ", unitsOnOrder=" + unitsOnOrder +
-                ", reorderLevel=" + reorderLevel +
-                ", discontinued=" + discontinued +
-                '}';
-    }
+	public Product(String id, String name, double price, int unitsInStock, boolean discontinued,
+			String quantityPerUnit) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.unitPrice = price;
+		this.unitsInStock = unitsInStock;
+		this.discontinued = discontinued;
+		this.quantityPerUnit = quantityPerUnit;
+	}
+	
 }
