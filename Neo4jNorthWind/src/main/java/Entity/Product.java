@@ -9,31 +9,26 @@ import lombok.ToString;
 
 @Setter
 @Getter
-@ToString
 @NoArgsConstructor
 //@AllArgsConstructor
+@ToString
 public class Product {
-	@SerializedName("productID")
+	@SerializedName	("productID")
 	private String id;
-	@SerializedName("productName")
+	@SerializedName	("productName")
 	private String name;
 	private double unitPrice;
-	private int unitsInStock;
-	private boolean discontinued;
 	private String quantityPerUnit;
 	
-	@ToString.Exclude
-	private Category category;
-
-	public Product(String id, String name, double price, int unitsInStock, boolean discontinued,
-			String quantityPerUnit) {
+	public Product(String id, String name, double unitPrice, String quantityPerUnit) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.unitPrice = price;
-		this.unitsInStock = unitsInStock;
-		this.discontinued = discontinued;
+		this.unitPrice = unitPrice;
 		this.quantityPerUnit = quantityPerUnit;
 	}
-	
+
+	@ToString.Exclude
+	private Category category;
+
 }

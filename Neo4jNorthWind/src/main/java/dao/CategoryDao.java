@@ -15,36 +15,69 @@ public class CategoryDao {
 	private Driver driver;
 	
 	public CategoryDao() {
-		driver = AppUtils.initDriver();
+		driver = AppUtils.getDriver();
 	}
 	
-	public Category findOne(String id) {
-		String query = "MATCH (n:Category) WHERE n.categoryID = $id RETURN n";
-		Map<String, Object> map = Map.of("id", id);
+	
+	/**
+	 * Create a new category
+	 * @param category - Category object
+	 */
+	
+	public void addCategory(Category category) {
+		String query = "CREATE (n:Category {categoryID: $categoryID, categoryName: $categoryName, description: $description})";
+	
+		Map<String, Object> pars = AppUtils.getProperties(category);
 		
-		try(Session session = driver.session()){
-			return session.executeRead(tx -> {
-				Result result = tx.run(query, map);
-				if(!result.hasNext())
-					return null;
-				 
-				Record record = result.next();
-				Node node = record.get("n").asNode();
-				
-//				String name = node.get("categoryName").asString();
-//				String dest = node.get("description").asString();
-				
-//				return new Category(id, name, dest);
-				
-				Category c = AppUtils.convert(node, Category.class);
-				
-				return c;
-				
+		try (Session session = driver.session()) {
+			session.executeWrite(tx -> {
+				return tx.run(query, pars).consume();
 			});
 		}
 	}
 	
-	public void close () {
+	/**
+	 * Find one category by id
+	 * @param id - Category id
+	 * @return Category
+	 */
+	
+	public Category findOne(String categoryID) {
+		String query = "MATCH (n:Category) where n.categoryID= $id RETURN n";
+		Map<String, Object> pars = Map.of("id", categoryID);
+		
+		try(Session session = driver.session()){
+			return session.executeRead(tx -> {
+				Result result = tx.run(query, pars);
+				
+				if (!result.hasNext()) 
+                    return null;
+				Record record = result.next();
+				Node node = record.get("n").asNode();
+				
+//				String name = node.get("categoryName").asString();
+//				String description = node.get("description").asString();
+//				
+//				Category category = new Category(categoryID, name, description);
+				
+				Category category = AppUtils.nodeToPOJO(node, Category.class);
+				
+				return category;
+			});
+		}
+		
+	}
+	
+	
+	public void close() {
 		driver.close();
+	}
+	
+	public static void main(String[] args) {
+		CategoryDao categoryDao = new CategoryDao();
+		Category category = new Category("A124234", "sdfsd", "sdfsd");
+		categoryDao.addCategory(category);
+		categoryDao.close();
+		System.out.println("Done!");
 	}
 }
