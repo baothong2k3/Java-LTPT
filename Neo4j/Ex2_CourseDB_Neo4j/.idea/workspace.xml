@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5bead3e6-e3e8-470c-a716-bd46eb368a2a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2drxxONcK0t68LpwSeshnmO9QV2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.TestDaoCourse.testCreateCourseByDept.executor": "Run",
+    "JUnit.TestDaoCourse.testListOfCourse.executor": "Run",
+    "JUnit.TestDaoCourse.testListOfCourseByDeptID.executor": "Run",
+    "JUnit.TestDaoDepartment.testFindDepartmentByID.executor": "Run",
+    "JUnit.TestDaoDepartment.testGetAllDean.executor": "Run",
+    "JUnit.TestDaoDepartment.testGetDeanByID.executor": "Run",
+    "JUnit.TestDaoDepartment.testListOfDeptStdMax.executor": "Run",
+    "JUnit.TestDaoDepartment.testListOfNameDeanNoSt.executor": "Run",
+    "JUnit.TestDaoDepartment.testSumQuantitySVOfDept.executor": "Run",
+    "JUnit.TestDaoDepartment.testSumQuantitySVOfDeptSortDeptID.executor": "Run",
+    "JUnit.TestDaoDepartment.testUpdateDepartmentByName.executor": "Run",
+    "JUnit.TestDaoStudent.testFindStudentByID.executor": "Run",
+    "JUnit.TestDaoStudent.testListOfStudent.executor": "Run",
+    "JUnit.TestDaoStudent.testListOfStudentGpa.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Worksapce/Java/Project_PhanTan/JPA/JPA_TH_BT4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "E:/Worksapce/Java/Project_PhanTan/GK_PhanTan/OnTap/Ex2_CourseDB_Neo4j/src/main/java/fit/dev/sin/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.TestDaoCourse.testListOfCourse">
+    <configuration name="TestDaoCourse.testCreateCourseByDept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ex2_CourseDB_Neo4j" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestDaoCourse" />
+      <option name="METHOD_NAME" value="testCreateCourseByDept" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDaoCourse.testListOfCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ex2_CourseDB_Neo4j" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestDaoCourse" />
+      <option name="METHOD_NAME" value="testListOfCourse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDaoDepartment.testListOfDeptStdMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ex2_CourseDB_Neo4j" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestDaoDepartment" />
+      <option name="METHOD_NAME" value="testListOfDeptStdMax" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDaoDepartment.testSumQuantitySVOfDept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ex2_CourseDB_Neo4j" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestDaoDepartment" />
+      <option name="METHOD_NAME" value="testSumQuantitySVOfDept" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDaoStudent.testListOfStudentGpa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ex2_CourseDB_Neo4j" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestDaoStudent" />
+      <option name="METHOD_NAME" value="testListOfStudentGpa" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestDaoCourse.testListOfCourse" />
+        <item itemvalue="JUnit.TestDaoCourse.testCreateCourseByDept" />
+        <item itemvalue="JUnit.TestDaoDepartment.testListOfDeptStdMax" />
+        <item itemvalue="JUnit.TestDaoDepartment.testSumQuantitySVOfDept" />
+        <item itemvalue="JUnit.TestDaoStudent.testListOfStudentGpa" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-18.0.2-corretto-18.0.2-f644763e9732-da6bd485" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5bead3e6-e3e8-470c-a716-bd46eb368a2a" name="Changes" comment="" />
+      <created>1710780246596</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710780246596</updated>
+      <workItem from="1710780247689" duration="1128000" />
+      <workItem from="1710837397611" duration="669000" />
+      <workItem from="1710870315509" duration="5696000" />
+      <workItem from="1710904660067" duration="1206000" />
+      <workItem from="1710918359213" duration="5389000" />
+      <workItem from="1710956298723" duration="132000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
