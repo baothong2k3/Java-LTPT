@@ -8,8 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
-import java.dao.CategoryDao;
-import java.entity.Category;
+import entity.Category;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class CategoryDaoTest {
