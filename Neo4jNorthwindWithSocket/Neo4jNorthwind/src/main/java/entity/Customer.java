@@ -36,6 +36,12 @@ public class Customer {
 	private transient Contact contact;
 	 
 	private transient Address address;
+<<<<<<< HEAD
+=======
+	
+	
+	
+>>>>>>> 47c7be042a32fda6f563d9b5c6019892d4ef1f62
 	@ToString.Exclude
 	private transient List<Order> orders;
 	

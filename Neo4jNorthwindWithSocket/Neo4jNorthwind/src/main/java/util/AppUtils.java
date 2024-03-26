@@ -44,8 +44,19 @@ public class AppUtils<T> {
 	}
 
 	public static <T> Map<String, Object> getProperties(T t) {
+<<<<<<< HEAD
 		String json = GSON.toJson(t);
 		Map<String, Object> map = GSON.fromJson(json,  new TypeToken<Map<String, Object>>(){});
+=======
+		
+		String json = GSON.toJson(t);
+//		System.out.println(json);
+		
+//		Map<String, Object> map = GSON.fromJson(json, Map.class);
+		Map<String, Object> map = GSON.fromJson(json,  new TypeToken<Map<String, Object>>(){});
+//		System.out.println(map);
+		
+>>>>>>> 47c7be042a32fda6f563d9b5c6019892d4ef1f62
 		return map;
 	}
 

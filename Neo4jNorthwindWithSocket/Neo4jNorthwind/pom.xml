@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -7,6 +8,15 @@
 	<groupId>GK</groupId>
 	<artifactId>CourseUD</artifactId>
 	<version>1.0-SNAPSHOT</version>
+=======
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>iuh.fit</groupId>
+	<artifactId>Neo4jNorthwind</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+>>>>>>> 47c7be042a32fda6f563d9b5c6019892d4ef1f62
 
 	<dependencies>
 
@@ -50,5 +60,10 @@
 			<version>5.10.2</version>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 47c7be042a32fda6f563d9b5c6019892d4ef1f62
 	</dependencies>
 </project>
