@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>JPA_B4</artifactId>
+    <artifactId>DangBaoThong_21014091_JPA_B4</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>JPA_B4</name>
     <packaging>war</packaging>
@@ -76,6 +76,12 @@
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-runtime</artifactId>
             <version>3.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.4.4.Final</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>
