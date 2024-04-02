@@ -18,12 +18,13 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TestCourse {
     /**
      * @description: Set up before class
      */
     private CourseDAO courseDAO;
-    @BeforeEach
+    @BeforeAll
     void setUp() {
         courseDAO = new CourseDAO();
     }
@@ -41,7 +42,7 @@ public class TestCourse {
         assertFalse(courses.isEmpty(), "The returned list should not be empty");
         courses.forEach(System.out::println);
     }
-    @AfterEach
+    @AfterAll
     void tearDown() {
         courseDAO.close();
         courseDAO = null;
